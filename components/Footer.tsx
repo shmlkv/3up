@@ -1,9 +1,7 @@
 import * as React from 'react'
-import { FaTwitter, FaGithub, FaLinkedin } from 'react-icons/fa'
-import { IoSunnyOutline, IoMoonSharp } from 'react-icons/io5'
-import * as config from 'lib/config'
-
+import { IoMoonSharp, IoSunnyOutline } from 'react-icons/io5'
 import styles from './styles.module.css'
+
 
 // TODO: merge the data and icons from PageSocial with the social links in Footer
 
@@ -26,7 +24,8 @@ export const Footer: React.FC<{
 
   return (
     <footer className={styles.footer}>
-     <div className={styles.copyright}>© 2022 </div>
+      <div className={styles.copyright}>2022 </div>
+
       {hasMounted ? (
         <div className={styles.settings}>
           <a
@@ -39,7 +38,7 @@ export const Footer: React.FC<{
         </div>
       ) : null}
 
-       <!--<div className={styles.social}>
+      {/* <div className={styles.social}>
         {config.twitter && (
           <a
             className={styles.twitter}
@@ -62,7 +61,7 @@ export const Footer: React.FC<{
           >
             <FaGithub />
           </a>
-        )} 
+        )}
 
         {config.linkedin && (
           <a
@@ -74,8 +73,8 @@ export const Footer: React.FC<{
           >
             <FaLinkedin />
           </a>
-        )}-->
-      </div>
-    </footer>    
+        )}
+      </div> */}
+    </footer>
   )
 }

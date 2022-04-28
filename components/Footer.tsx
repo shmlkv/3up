@@ -39,7 +39,7 @@ export const Footer: React.FC<{
         </div>
       ) : null}
 
-      <div className={styles.social}>
+       <!--<div className={styles.social}>
         {config.twitter && (
           <a
             className={styles.twitter}
@@ -62,7 +62,7 @@ export const Footer: React.FC<{
           >
             <FaGithub />
           </a>
-        )}
+        )} 
 
         {config.linkedin && (
           <a
@@ -74,7 +74,7 @@ export const Footer: React.FC<{
           >
             <FaLinkedin />
           </a>
-        )}
+        )}-->
       </div>
     </footer>    
   )
